@@ -1,0 +1,201 @@
+@charset "utf-8";
+.header { height: auto; width: 1000px; margin: 0 auto; outline:0px; margin-bottom: -27px; }
+.header .ust { width: 1000px; height: 90px; }
+.header .ust .logo { background-image: url(/images/header_sprite.png?v=10.1); background-position: 7px 63px; height: 109px; width: 155px; float: left; margin-top: -30px; font-size: 12px;}
+.header a:hover {color:#424245}
+.header .ust .kullanici_alan { float: right; }
+.header .ust .kullanici_alan .login { height: 25px; width: auto;padding-top: 13px; }
+.header .ust .kullanici_alan .login ul li { list-style: none; float: left; padding-top:5px }
+.header .ust .kullanici_alan .login ul { margin-top: -12px; }
+.header .ust .kullanici_alan .login li { border-right: 1px solid #dfdfdf; padding: 5px 10px; }
+.header .ust .kullanici_alan .login li:first-child { border-left: 0px; }
+.header .ust .kullanici_alan .login li:last-child { border-right: 0px; }
+.header .ust .kullanici_alan .login li.social_login_header {border:0;padding: 5px;}
+.header .ust .kullanici_alan .login ul li img {margin: -2px;}
+.header .ust .kullanici_alan .login ul li [title="Mesaj"] { background-image: url(/images/header_sprite.png?v=10.1); background-position: -879px -12px; color: #FF8300; width: 11px; height: 8px; padding: 0 4px 0 17px; }
+.header .ust .kullanici_alan .login ul li a {text-decoration:none !important}
+.uye_content .facebook_login {display: block;clear: both;margin: 110px 0 0 169px;}
+.header .ust .arama_alan { float: left; margin: 9px 0 0 160px; position: absolute; }
+.header .ust .arama_alan .encok_aranan { padding: 0px 0 0 75px; font-size: 11px; }
+.header .ust .arama_alan .mh_tel { padding: 0px 0 6px 170px; font-size: 12px; color:#6b6a66; text-shadow: 0px 1px 0px #FFF; height:11px;}
+.header .ust .arama_alan .mh_tel a {color:#6b6a66;font-weight: bold;text-decoration: underline;}
+.header .ust .arama_alan .arama { width: 547px; height: 43px; border: 1px solid #ebebeb; -moz-border-radius: 4px; /* -webkit-border-radius: 4px; */ /* border-radius: 4px; */ -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; background-color: #fff; margin: 7px 0 0 40px;}
+.header .ust .arama_alan .mh_tel .fa-envelope-o {color:#ffd105; font-size: 13px;margin: 1px 0 0 5px;text-shadow: 0 0 0;}
+.header .ust .arama_alan .mh_tel .fa-circle {color:#e56767;font-size: 20px;margin: -9px -3px;position: absolute;text-shadow: 0 0 0;}
+.header .ust .arama_alan .mh_tel .fa-circle span {position: absolute;color: #fff;margin: 4px -17px;font-size: 12px;font-family: "Lucida Grande",sans-serif;line-height: 11px;text-align: center;width: 16px;font-weight: bold;}
+
+.header .ust .arama_alan .arama input { background-color: transparent; border: 0px; width: 470px; height: 43px; outline: 0; font-size: 13px; padding-left: 15px; 
+line-height: 20px; color: #878787; float: left; box-shadow:none}
+@media screen and (max-device-width: 480px){ .header .ust .arama_alan .arama input { width: 466px;}}
+@media screen and (max-device-width: 768px){ .header .ust .arama_alan .arama input { width: 466px;}}
+
+.header .ust .arama_alan .ara_buton { width: 41px; height: 28px; -moz-border-radius: 0 3px 3px 0; /* -webkit-border-radius: 0 3px 3px 0; */ /* border-radius: 0 3px 3px 0; */ 
+-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+background-color: #ffd200; float: left; margin: 2px 0 0 4px; color: #535456; font-size: 16px; padding: 11px 0 0 14px; cursor: pointer; text-shadow:none;
+background-image: -moz-linear-gradient(bottom, #fdbf04 0%, #ffd55e 100%);
+background-image: -o-linear-gradient(bottom, #fdbf04 0%, #ffd55e 100%);
+background-image: -webkit-linear-gradient(bottom, #fdbf04 0%, #ffd55e 100%);
+background-image: linear-gradient(bottom, #fdbf04 0%, #ffd55e 100%);
+}
+.header .ust .arama_alan .ara_buton:hover {background-color:#fed92e;
+background-image: -moz-linear-gradient(bottom, #ffd55e 0%, #fdbf04 100%);
+background-image: -o-linear-gradient(bottom, #ffd55e 0%, #fdbf04 100%);
+background-image: -webkit-linear-gradient(bottom, #ffd55e 0%, #fdbf04 100%);
+background-image: linear-gradient(bottom, #ffd55e 0%, #fdbf04 100%);}
+
+.header .ust .arama_alan .category_search_text {float: left;font-size: 10px;margin: 0px 5px 0 43px;width: 535px;height: 12px;overflow: hidden; line-height:12px; color:#969696}
+.ie10 .header .ust .arama_alan .category_search_text, .ie11 .header .ust .arama_alan .category_search_text {margin-left:-482px}
+
+.header .ust .arama_alan .category_search_text a {margin-left:5px;color:#969696}
+.header .ust .arama_alan .category_search_text a:hover {color:#424245;text-decoration:underline; }
+.header .ust .arama_sonuc {width: 547px;height: 505px; position:absolute; z-index:9999;margin: 5px 0 0 40px;background-color: #f8f8f8;border: 1px solid #ebebeb;}
+.header .ust .arama_sonuc .ucgen {background-image: url(/images/header_sprite.png); background-position: -909px -132px; height:17px; width:45px;margin:-17px 0 0 45px;}
+.header .ust .arama_sonuc .sonuc_kategoriler {width:190px;float:left;padding:10px 20px 0 10px;}
+.header .ust .arama_sonuc .sonuc_urunler {width:320px; float:left;padding:10px 0;}
+.header .ust .arama_sonuc .sonuc_kategoriler .baslik {height:33px; border-bottom:1px dashed #b8b8b8}
+.header .ust .arama_sonuc .sonuc_kategoriler .baslik p {color:#b5b5b5; font-size:11px; margin: 0px;}
+.header .ust .arama_sonuc .sonuc_kategoriler ul {list-style:none; padding:0px; font-size: 11px;}
+.header .ust .arama_sonuc .sonuc_kategoriler ul li {height: 21px;padding: 4px 0 0 3px;line-height: 20px;overflow: hidden;}
+.header .ust .arama_sonuc .sonuc_kategoriler ul li:hover {background-color:#ebebeb}
+
+.header .ust .arama_sonuc .sonuc_urunler .baslik {padding-bottom: 3px; border-bottom:1px dashed #b8b8b8}
+.header .ust .arama_sonuc .sonuc_urunler .baslik p {color:#b5b5b5; font-size:11px; margin: 0px;}
+.header .ust .arama_sonuc .sonuc_urunler .baslik .sonuc_urun {/*background-image: url(/images/header_sprite.png); background-position:-727px -212px;*/padding: 2px 0;max-height: 29px;overflow: hidden;line-height: 15px;}
+.header .ust .arama_sonuc .sonuc_urunler .baslik .sonuc_urun span {font-weight:bold}
+.header .ust .arama_sonuc .sonuc_urunler ul {list-style:none; padding:0px; font-size: 11px;margin: 0px;}
+.header .ust .arama_sonuc .sonuc_urunler ul li {line-height: 16px; margin:0 0 2px 3px;height:40px; }
+.header .ust .arama_sonuc .sonuc_urunler ul li:hover {background-color: #ebebeb; padding:0px}
+.header .ust .arama_sonuc .sonuc_urunler ul li img {border:1px solid #efefef; padding:2px; float:left;margin: 5px 7px 0 -1px;}
+.header .ust .arama_sonuc .sonuc_urunler .text {width: 275px;height:15px;overflow: hidden;padding-top: 13px;display: block;padding: 10px 0 0 0;line-height: 16px;}
+
+.header .sepet { position: absolute; margin: -55px 0 0 765px; z-index: 5999;/*width: initial;*/ width:230px}
+.header .sepet #pagewrapperdiv span {}
+.header .sepet #mainnavdiv { position: relative; margin-top: 6px; float: left; }
+.header .sepet a.mainnav { position: relative;  font-size: 13px;  display: block; float: left;height: 27px; line-height: 33px; width:90px; text-align: center; text-decoration: none; /* text-transform: lowercase; */ }
+.header .sepet #mainnavdiv [tabindex="1"] { background-image: url(/images/header_sprite.png); background-position:26px -139px;padding: 14px 10px 0 0; width:99px; outline:0px; }
+.header .sepet #mainnavdiv [tabindex="5"] {background-image: url(/images/header_sprite.png); background-position:-98px -139px;padding-top: 14px;width:109px; outline:0px;}
+.header .sepet .white {border-right: 1px solid #fff;}
+.header .sepet .gray {border-left: 1px solid #dfdfdf; }
+.header .sepet a#mainnavover1 { display: none; position: absolute; top: 2px; left: 9px; font-size: 13px;background-color: #fff; height: 53px; line-height: 37px; width: 80px; 
+                 text-align: center; text-decoration: none; text-indent: 1px; 
+-moz-box-shadow: 0px 0px 10px #929292;-webkit-box-shadow: 0px 0px 10px #929292;box-shadow: 0px 0px 10px #929292;
+-moz-border-radius: 5px 5px 0 0;-webkit-border-radius: 5px 5px 0 0;border-radius: 5px 5px 0 0;background-image: url(/images/header_sprite.png); background-position:17px -229px; padding: 16px 21px 0 0;}
+.header .sepet div#mainnavflyer1 { display: none; position: absolute; width: 215px; top: 54px; left:9px; z-index: 600; height:auto; background-color:#fff;-moz-box-shadow: 0px 0px 10px #929292;
+-webkit-box-shadow: 0px 0px 10px #929292;-moz-border-radius:0 5px 5px 5px; -webkit-border-radius:0 5px 5px 5px; border-radius:0 5px 5px 5px;
+ box-shadow: 0px 0px 10px #929292; }
+.header .sepet a#mainnavover5 { display: none; position: absolute; top: 2px; left: 110px; font-size: 13px; background-color: #fff; height: 53px; line-height: 37px; width: 111px; 
+                 text-align: center; text-decoration: none; text-indent: 1px;-moz-box-shadow: 0px 0px 10px #929292;-webkit-box-shadow: 0px 0px 10px #929292;box-shadow: 0px 0px 10px #929292; 
+ -moz-border-radius: 5px 5px 0 0;-webkit-border-radius: 5px 5px 0 0;border-radius: 5px 5px 0 0; background-image: url(/images/header_sprite.png); background-position:-97px -229px;padding: 16px 4px 0 0;}
+.header .sepet div#mainnavflyer5 { display: none; position: absolute; width: 370px; top: 54px; left:-145px; z-index: 600; height:370px; background-color:#fff;-moz-box-shadow: 0px 0px 10px #929292;
+-webkit-box-shadow: 0px 0px 10px #929292;-moz-border-radius: 5px 0 5px 5px;-webkit-border-radius: 5px 0 5px 5px;border-radius: 5px 0 5px 5px;
+box-shadow: 0px 0px 10px #929292; }
+.header .sepet div#mainnavflyer1 .yama {background-color: #fff;width: 101px;height: 13px;margin: -9px 0;position:absolute;z-index: 601;}
+.header .sepet div#mainnavflyer5 .yama {background-color: #fff;width: 115px;height: 13px;margin:-9px 0 0 255px;position:absolute;z-index: 601;}
+
+.header .sepet #pagewrapperdiv #mainnavflyer1 ul {list-style:none; padding:5px; margin:0px}
+.header .sepet #pagewrapperdiv #mainnavflyer1 li {height:13px; border-bottom:1px dashed #b8b8b8;padding: 5px; }
+.header .sepet #pagewrapperdiv #mainnavflyer1 li:last-child {border-bottom:0px}
+/*.header .sepet #pagewrapperdiv #mainnavflyer1 [title="Siparişlerim"],*/ 
+.header .sepet #pagewrapperdiv #mainnavflyer1 [title="Mesajlarım"], 
+/*.header .sepet #pagewrapperdiv #mainnavflyer1 [title="Puanlarım"],*/
+.header .sepet #pagewrapperdiv #mainnavflyer1 [title="Üyelik"] {border-bottom: 0px;margin-bottom: -5px;}
+
+.header .sepet #pagewrapperdiv #mainnavflyer1 [title="Çıkış"] a:hover {color: #8a8a8a;text-decoration:underline}
+.header .sepet #pagewrapperdiv #mainnavflyer1 a:hover {color: #8a8a8a;}
+/* basic scrollbar styling */
+.mCSB_container { width:370px; margin-right: 30px; overflow: hidden; }
+.mCSB_container.mCS_no_scrollbar { margin-right: 0; }
+.mCS_disabled > .mCustomScrollBox > .mCSB_container.mCS_no_scrollbar,
+.mCS_destroyed > .mCustomScrollBox > .mCSB_container.mCS_no_scrollbar { margin-right: 30px; }
+.mCustomScrollBox > .mCSB_scrollTools { width: 16px; height: 100%; top: 0; right: 0; opacity: 0.75;  }
+.mCSB_scrollTools .mCSB_draggerContainer { position: absolute; top: 0; left: 0; bottom: 0; right: 0; height: auto; }
+.mCSB_scrollTools a + .mCSB_draggerContainer { margin: 20px 0; }
+.mCSB_scrollTools .mCSB_draggerRail { width: 6px; height: 100%; margin: 0 auto; background-color: #f2f1f1; /* rgba fallback */ }
+.mCSB_scrollTools .mCSB_dragger { cursor: pointer; width: 100%; height: 30px; }
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar { width: 6px; height: 100%; margin: 0 auto; text-align: center; background-color: #ffd200; /* rgba fallback */ }
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown { display: block; position: relative; height: 20px; overflow: hidden; margin: 0 auto; cursor: pointer; }
+.mCSB_scrollTools .mCSB_buttonDown { top: 100%; margin-top: -40px; }
+
+/*dark (dark colored scrollbar)*/
+.mCS-dark > .mCSB_scrollTools .mCSB_draggerRail { background-color: #f2f1f1; /* rgba fallback */ }
+.mCS-dark > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar { background-color: #f2f1f1; /* rgba fallback */ }
+/*light-thin*/
+.mCS-light-thin > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar { width: 6px; }
+.mCS-light-thin.mCSB_horizontal > .mCSB_scrollTools .mCSB_draggerRail { width: 100%; }
+.mCS-light-thin.mCSB_horizontal > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar { width: 100%; height: 2px; margin: 7px auto; }
+
+.header .sepet #pagewrapperdiv #mainnavflyer5 #scrolljs                     {height:257px; border-bottom: 1px dashed #B8B8B8;padding-bottom: 5px;}
+.header .sepet #pagewrapperdiv #mainnavflyer5 #scrolljs ul                  {padding: 10px 5px;margin: 0px;width: 345px;}
+.header .sepet #pagewrapperdiv #mainnavflyer5 #scrolljs ul li               {list-style:none}
+.header .sepet #pagewrapperdiv #mainnavflyer5 #scrolljs li                  {padding: 2px 0; height: auto;margin-left:15px;float: left;width: 330px;}
+.header .sepet #pagewrapperdiv #mainnavflyer5 #scrolljs li:hover            {background-color: #efefef;}
+.header .sepet #pagewrapperdiv #mainnavflyer5 #scrolljs ul .sepetbos        {font-size:16px; text-align:center; margin: 125px 0;}
+.header .sepet #pagewrapperdiv #mainnavflyer5 #scrolljs ul li .hediye       {height: auto;float:left; padding: 0;}
+.header .sepet #pagewrapperdiv #mainnavflyer5 #scrolljs ul li .close        {background-image: url(/images/header_sprite.png); background-position:-374px -17px; width:17px; height:13px; cursor:pointer; float:left;margin: 17px 0 0 -15px;}
+.header .sepet #pagewrapperdiv #mainnavflyer5 #scrolljs ul li .close:hover  {background-position:-429px -18px;}
+.header .sepet #pagewrapperdiv #mainnavflyer5 #scrolljs ul li img           {border:1px solid #efefef; padding:2px; float:left;margin:0 5px 0 0px}
+.header .sepet #pagewrapperdiv #mainnavflyer5 #scrolljs ul li .aciklama_alan{float:left; width:175px; margin-right:10px}
+.header .sepet #pagewrapperdiv #mainnavflyer5 #scrolljs ul li .aciklama_alan .urun_ad      {font-size:11px;width: 175px;height: 15px;overflow: hidden;color: #424245;line-height: 16px;display: block;}
+.header .sepet #pagewrapperdiv #mainnavflyer5 #scrolljs ul li .aciklama_alan .urun_spot    {font-size:11px;color:#b5b5b5;width: 175px;height: 15px;overflow: hidden;line-height: 14px; display:block}
+.header .sepet #pagewrapperdiv #mainnavflyer5 #scrolljs ul li .aciklama_alan .urun_adet    {font-size:11px; color:#b5b5b5;width: 175px;height: 15px;overflow: hidden;}
+.header .sepet #pagewrapperdiv #mainnavflyer5 #scrolljs ul li .fiyat        {padding: 15px 5px; text-align:right}
+
+.header .sepet #pagewrapperdiv #mainnavflyer5 .guvenli_ticaret {background-image: url(/images/header_sprite.png); background-position: -727px 0px; width: 135px; height:65px; border-right:1px dashed #b8b8b8; float:left;margin-left: 30px;}
+.header .sepet #pagewrapperdiv #mainnavflyer5 .sepet_toplam_fiyat {float: left;text-align: center;width: 195px;padding-top: 10px;}
+.header .sepet #pagewrapperdiv #mainnavflyer5 .sepet_toplam_fiyat div {font-size:23px; margin:5px 0 0 0; font-weight:bold;}
+.header .sepet #pagewrapperdiv #mainnavflyer5 .sepet_toplam_fiyat div span {color:#4E4E4E;font-size:12px}
+.header .sepet #pagewrapperdiv #mainnavflyer5 .sepete_git { margin: -5px 0 0 180px;box-sizing: border-box;-webkit-box-sizing: border-box;padding: 7px 40px;text-align: center;font-size: 16px;float: left; }
+
+.header .sepet #pagewrapperdiv #mainnavflyer5 #scrolljs .hediye  {width: 330px!important;clear:both; padding-top:5px;float: left;}
+.header .sepet #pagewrapperdiv #mainnavflyer5 #scrolljs .hediye:before {background-image:url(/images/sepet/hedaer_sepet_hediye.png); height:25px; width:15px; float:left; margin: 0px 0 0 15px; content: "";position: absolute;}
+.header .sepet #pagewrapperdiv #mainnavflyer5 #scrolljs .hediye::before {background-image:url(/images/sepet/hedaer_sepet_hediye.png); height:25px; width:15px; float:left; margin: 0px 0 0 15px; content: "";display:block}
+.header .sepet #pagewrapperdiv #mainnavflyer5 #scrolljs .hediye li {margin-left: 0; width: 295px;padding-left: 35px;}
+
+
+
+.header .linkler {background-image: url(/images/header_sprite.png); background-position:-5px -61px; height:37px; margin: 12px 0;}
+.header .linkler ul li  {list-style:none; float:left; }
+.header .linkler ul     {padding: 0px 0 0 5px;}
+.header .linkler li     {padding-right: 35px;font-size: 12px; padding-top:2px}
+.header .linkler ul .kategoriler {width: 161px; /*background-image: url(/images/header_sprite.png); background-position:-148px -16px;*/ font-size: 15px; padding-top:0;}
+.header .linkler ul .kategoriler #ac {/* width:105px; */ display:block;margin-left: 25px;}
+.header .linkler ul li #divSubCategory { display: none; background-color:#fff; width:220px; height:auto; position:absolute; z-index:1001;margin-top: 7px; font-size:11px !important; 
+-moz-box-shadow: 0px 0px 10px #929292;-webkit-box-shadow: 0px 0px 10px #929292;box-shadow: 0px 0px 10px #929292;}
+.header .linkler .fa-caret-down {font-size: 16px;margin: 1px 42px 0 0;float: right;color: #535456;}
+.header_leftmenu { position: absolute; margin: 0px 0 0 0px; z-index: 5000; border: 1px solid #EFEFEF; background-color: #FFF; }
+.topbanner {margin-top:0px;}
+.header .topbanner {margin: -27px 0;height: 84px;}
+.header .topbanner img {margin:0 5px}
+.header .linkler .leftmenu {padding-bottom: 5px;}
+/* Haeder Secure */
+.header_secure { height: auto; width: 980px; margin: 0 auto; outline:0px; margin-bottom: -3px; }
+.header_secure .ust { width: 980px; height: 65px; }
+.header_secure .logo { background-image: url(/images/header_sprite.png); background-position: 7px 28px; height: 93px; width: 155px; float: left; }
+.header_secure .linkler {/*background-image: url(/images/header_sprite.png); background-position:-5px -61px;*/ height:37px; margin: 12px 0;}
+.header_secure .mh_tel { font-size: 12px; color:#6b6a66; text-shadow: 0px 1px 0px #FFF; height: 12px; margin: -25px 310px; position: absolute;text-align: center;}
+.header_secure .mh_tel:after {background-image:url(/images/sepet/sepet_sprite.png); background-position:-713px -133px; content:""; position:absolute; width:22px; height:29px; margin: -15px -167px;}
+.header_secure .mh_tel strong {display: block;padding-bottom: 5px;letter-spacing: 1px;}
+
+.adimlar {float:right; margin: 30px 20px;}
+.adimlar .siparisadim {width:115px; float:left; text-align:center}
+.sepet_content .adimlar div + div a {color:#c8c8c8}
+.sepet_content .adimlar:after {background-image:url(/images/sepet/sepet_sprite.png); background-position:0px -2px; position:absolute; content:""; width:413px; height:7px;margin: 20px -425px; float:left}
+.secenekler_content .adimlar:after {background-image:url(/images/sepet/sepet_sprite.png); background-position:0px -12px; position:absolute; content:""; width:413px; height:7px;margin: 20px -425px; float:left}
+.odeme_content .adimlar:after {background-image:url(/images/sepet/sepet_sprite.png); background-position:0px -22px; position:absolute; content:""; width:413px; height:7px;margin: 20px -425px; float:left}
+.tesekkur_main .adimlar:after {background-image:url(/images/sepet/sepet_sprite.png); background-position:0px -32px; position:absolute; content:""; width:413px; height:7px;margin: 20px -425px; float:left}
+
+
+.secenekler_content .adimlar {margin-top:-84px}
+.secenekler_content .adimlar div a {color:#c8c8c8}
+.secenekler_content .adimlar div + div a {color:#424245}
+.secenekler_content .adimlar div + div + div a {color:#c8c8c8}
+
+.odeme_content .adimlar {margin-top:-84px}
+.odeme_content .adimlar div a {color:#c8c8c8}
+.odeme_content .adimlar div + div + div a {color:#424245}
+.odeme_content .adimlar div + div + div + div a {color:#c8c8c8}
+
+.tesekkur_main .adimlar {margin-top:-84px}
+.tesekkur_main .adimlar div a {color:#c8c8c8}
+.tesekkur_main .adimlar div + div + div + div a {color:#424245}

@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+
+.footer { width:100%; height:400px; margin:30px auto; background-image:url(/images/footer_bg.png?v=2); background-repeat:repeat-x; background-color:#fff; line-height: 16px; }
+.footer_content {width: 1000px; height:250px; margin:0 auto;padding-top: 1px;  }
+
+.footer input {border: 0;background-color: transparent;}
+
+.eposta_uyelik {float:left; width:450px; height:41px}
+
+.eposta_uyelik .eposta_aciklama {float:left; margin: 21px 0 0 5px; color:#f57b20;}
+.eposta_uyelik .eposta_ekle {background-image:url(/images/footer_images.png?v=2); background-repeat:no-repeat; float:left; background-position:-18px -9px; width:215px; height:23px; margin:18px 0px 0px 7px;}
+.eposta_uyelik .eposta_text { line-height:15px; height:23px; margin:0px 0px 5px 7px; outline:0 none; width:195px; color:#444444; font-size:12px }
+
+.eposta_uyelik .eposta_btn { background-image:url(/images/footer_images.png?v=2); background-repeat:no-repeat; background-position:-237px -10px; width:38px; height:22px; margin: 19px 0 0 353px;}
+
+.footer_content .app_logo {width:350px; height:40px;float:left; margin:7px 0 0 168px}
+.footer_content .app_logo .ios {background-image:url(/images/footer_images.png?v=2); background-position:-764px 0px; width:136px; height:42px; float:right}
+.footer_content .app_logo .android {background-image:url(/images/footer_images.png?v=2); background-position:-627px 0px; width:130px; height:42px; float:right; margin-right:10px}
+.height10 {height:10px}
+.height15 {height:15px}
+
+.footer_kategoriler {width: 820px; height:155px; float:left}
+.footer_kategoriler .baslik {width: 815px; height:20px; color:#069; font-size:14px; border-bottom:1px solid #cfcfcf; padding-left:5px}
+.footer_kategoriler ul {margin: 2px 0 0 5px;}
+.footer_kategoriler ul li {float:left; width: 200px; margin:1px}
+
+.footer_iletisim    {width: 130px; height:150px; margin-left:23px; float:left}
+.footer_iletisim .baslik {width: 125px; height:20px; color:#069; font-size:14px; border-bottom:1px solid #cfcfcf; padding-left:5px}
+.footer_iletisim ul {margin: 2px 0 0 5px;}
+.footer_iletisim ul li {float:left; width:170px; margin:1px}
+
+.footer_sosyal    {width:170px; height:50px; margin:21px 0; float:left}
+.footer_sosyal .baslik {width:160px; height:20px; color:#069; font-size:14px; border-bottom:1px solid #cfcfcf; padding-left:5px}
+.footer_sosyal ul {margin: 2px 0 0 5px; width:155px}
+.footer_sosyal ul li {float:left; width:45px; margin:3px}
+.footer_sosyal .facebook    {background-image:url(/images/footer_images.png?v=2); background-position:-380px -3px; width:41px; height:40px; display: block;}
+.footer_sosyal .twitter     {background-image:url(/images/footer_images.png?v=2); background-position:-431px -3px; width:41px; height:40px; display: block;}
+.footer_sosyal .googleplus  {background-image:url(/images/footer_images.png?v=2); background-position:-482px -3px; width:41px; height:40px; display: block;}
+
+.sosyal_medya { font-size:10px; text-align:right; margin:-5px 10px; }
+
+.footer_kurumsal    {width:170px; height:70px; margin-left:23px; float:left}
+.footer_kurumsal ul {margin: 2px 0 0 5px;}
+.footer_kurumsal ul li {float:left; width:170px; margin:1px}
+.footer_kurumsal a  {color:#069; font-size:13px}
+
+.hzl_bilgi { width: 1000px; margin:0 auto; padding:280px 0px 0 0; height:150px; text-align:center; }
+.footer_content .banka_logolar {background-image:url(/images/footer_images.png?v=2);background-position:38px -45px; width:970px; height:50px; background-repeat:no-repeat; display: block;}
+.hzl_bilgi .kurumlar {background-image:url(/images/footer_images.png?v=2); background-position: 35px -95px; width:835px; height:40px}
+
+.hzl_bilgi .logo {margin: 40px 0 0 320px; width:350px; height:50px}
+.hzl_bilgi .logo img {border:0px; margin: -11px 10px 0 10px; float:left}
+.hzl_bilgi .logo .text {float:left}
+
+img {border:0px;}
+.kategori_aciklama {border:1px solid #cfcfcf;width:auto; height:auto; padding:8px; border-bottom-left-radius:5px; border-bottom-right-radius:5px;border-top: 4px solid #ffd200; float: left;margin-top: 15px;color: #757575; }
+.kategori_aciklama .text {line-height:16px; text-align:justify}
+.listeleme_main .kategori_aciklama {margin: 10px 0 0 -5px;}
+.kategori_aciklama .text a {text-decoration:underline;color: #757575;}
+.facebook_like {margin-left:6px; float:left}
+
+a.open-blank [target="_blank"] {font-weight:bold; text-decoration:underline}

@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+.leftmenu ul{list-style:none;}
+.leftmenu {float:left;height: auto; margin:5px 8px 0px 0px; width: 211px; }
+.leftmenu .menu li {height:22px; line-height:22px;font-size: 12px !important;padding-right: 0px !important;float: none !important;border-bottom: 1px solid #fff;border-top: 1px solid #fff;border-left: 4px solid #fff;}
+.leftmenu .menu .leftmenu2:hover {height:22px; line-height:22px;font-size: 12px !important;padding-right: 0px !important;float: none !important;border-bottom: 1px solid #dddddd!important;border-top: 1px solid #dddddd!important;border-left: 4px solid #ffd200!important;}
+
+.leftmenu .menu li:first-child {margin-top:3px}
+
+.leftmenu .menu {font-size: 11px; line-height: 16px; padding-left:0px;position: relative; margin-top:0px}
+.leftmenu .menu li a {display: block; padding: 0px 0px 0px 6px;  text-decoration: none;}
+.leftmenu .menu li .dc-mega {position: relative;}
+.leftmenu .menu li .fa {display: block; position: absolute; top: 7px; right: 7px; color: #dbdbdb;font-size: 10px;}
+.leftmenu .menu li .sub-container {position: absolute; /* Required */overflow: hidden;padding: 0 0px 17px 0; /* Padding for drop shadow */ z-index:9999 !important;height: auto !important;}
+.header .linkler ul li #divSubCategory .leftmenu .menu li .sub-container {margin-left: 210px;}
+.leftmenu .menu li .sub-container .sub {border: none;padding: 15px 15px 5px 15px; background-color:#fff;border:1px solid #dddddd;}
+.leftmenu .menu li .sub-container.non-mega .sub {padding: 10px 0 0 10px;background: #fafafa;margin-top:1px}
+
+.leftmenu .mega-hover {background-color:#fafafa;border-bottom: 1px solid #dddddd!important;border-top: 1px solid #dddddd!important;border-left: 4px solid #ffd200!important;}
+.leftmenu .menu li .lefticerik .mega-hover, .leftmenu .menu li .lefticerik .leftmenu2 {border:0px!important;letter-spacing:0px}
+.leftmenu .menu li .lefticerik li {border:0px!important; letter-spacing:0px; }
+
+.leftmenu .menu .leftmenu2:hover:after, .leftmenu .menu .mega-hover:hover:after {content: "";position: absolute;width: 5px;height: 22px;background-color: #fafafa;margin: -22px 204px;z-index: 10000;}
+#divSubCategory .leftmenu .menu .leftmenu2:hover:after, #divSubCategory .leftmenu .menu .mega-hover:hover:after {content: "";position: absolute;width: 5px;height: 24px;background-color: #fafafa;margin: -24px 200px;z-index: 10000;}
+
+.leftmenu2 a:hover { background-color: #fafafa;}
+.lefticerik {width: 450px; }
+.lefticeriknone {display:none}
+.lefticerik p {margin:-5px 0 0 1px; border-bottom:1px solid #cfcfcf; width:438px; font-size:11px}
+.lefticerik_bg{background-color: #fff;font-size:11px;float:left; width:129px; height:100px; margin:10px 10px 0 2px; text-align:center; line-height:13px;border: solid 1px #e8e8e8;padding:0 3px}
+.lefticerik_bg:hover{background-color:#fff; background-image:none;border: solid 1px #bababa;}
+
+.lefticerik_bg img  {text-align: center;max-height: 63px;border: none; margin:5px 0 3px 0}
+.bg_small {float:left; width:135px; height:30px; margin:6px 10px 0 2px; text-align:center; line-height:13px}
+.leftmenu .menu .lefticerik_reklam  {margin: 10px 0 0 5px;border-top: 1px solid #CFCFCF;padding-top: 5px;width: 432px; height:100px; clear:both}
+.lefticerik_reklam img {margin-left:-6px}
+.LeftOrtalama1 {display: table; overflow: hidden; width:129px; height:30px;/* border: 0px; */}
+.LeftOrtalama2 {display: table-cell;vertical-align: middle; }
+.lefticerik li {background-color: #fafafa!important; height:auto !important}
+
+.bg_small img {margin: 0px;}
+
+.leftmenu .menu .menuicerik {background-color: #fff;font-size:11px;float:left; width:129px; height: 110px; margin: 10px 8px 0 2px; text-align:center; line-height:13px;border: solid 1px #e8e8e8;padding: 0 3px 6px 3px;}
+.leftmenu .menu .menuicerik:hover{border: solid 1px #bababa;}
+
+.leftmenu .menu .menuiceriktext {background-color: #fff;font-size:11px;float:left; width:135px;  margin: 10px 8px 0 2px; text-align:center; line-height:13px;border: solid 1px #e8e8e8;}
+.leftmenu .menu .menuiceriktext:hover{border: solid 1px #bababa;}
+.leftmenu .menu .menuicerik img {margin: 3px 20px 3px 20px;}
+.leftmenu .menu .texticerik {box-sizing: border-box; width: 137px;height: 35px;display: table-cell;vertical-align: middle;float: none;font-size: 11px;line-height: 13px; padding:0 3px}
+
+.leftmenu .menu .bilgisayar .sub-container {margin-top:-24px!important}
+.leftmenu .menu .telefon .sub-container {margin-top: -49px!important;}
+.leftmenu .menu .ev-elektronigi-tv .sub-container {margin-top: -72px!important;}
+.leftmenu .menu .foto-kamera .sub-container {margin-top: -98px!important;}
+.leftmenu .menu .oyun-oyun-konsolu .sub-container {margin-top: -24px!important;}
+.leftmenu .menu .beyaz-esya-elektrikli-ev-aletleri .sub-container {margin-top: -144px!important;}
+.leftmenu .menu .isitma-sogutma .sub-container {margin-top: -167px!important;}
+.leftmenu .menu .spor-outdoor .sub-container {margin-top: -192px!important;}
+.leftmenu .menu .anne-bebek-oyuncak .sub-container {margin-top: -216px!important;}
+.leftmenu .menu .saat-gozluk-aksesuar .sub-container {margin-top: -240px!important;}
+.leftmenu .menu .kozmetik-kisisel-bakim .sub-container {margin-top: -264px!important;}
+.leftmenu .menu .taki-mucevher-altin .sub-container {margin-top: -288px!important;}
+.leftmenu .menu .giyim-ayakkabi-canta .sub-container {margin-top: -312px!important;}
+.leftmenu .menu .mobilya .sub-container {margin-top: -336px!important;}
+.leftmenu .menu .ev-tekstili-dekorasyon .sub-container {margin-top: -360px!important;}
+.leftmenu .menu .yapi-market-hirdavat .sub-container {margin-top: -384px!important;}
+.leftmenu .menu .oto-aks-navigasyon .sub-container {margin-top: -277px!important;}
+.leftmenu .menu .hobi-oyun .sub-container {margin-top: -395px!important;}
+.leftmenu .menu .kitap-muzik .sub-container {margin-top: -457px!important;}
+.leftmenu .menu .ofis-kirtasiye .sub-container {margin-top: -480px!important;}
+.leftmenu .menu .pet-shop .sub-container {margin-top: -505px!important;}
+.leftmenu .menu .supermarket .sub-container {margin-top: -452px!important;}
+
+#divSubCategory .leftmenu .menu .bilgisayar .sub-container {margin-top:-26px!important}
+#divSubCategory .leftmenu .menu .telefon .sub-container {margin-top: -49px!important;}
+#divSubCategory .leftmenu .menu .ev-elektronigi-tv .sub-container {margin-top: -72px!important;}
+#divSubCategory .leftmenu .menu .foto-kamera .sub-container {margin-top: -98px!important;}
+#divSubCategory .leftmenu .menu .oyun-oyun-konsolu .sub-container {margin-top: -26px!important;}
+#divSubCategory .leftmenu .menu .beyaz-esya-elektrikli-ev-aletleri .sub-container {margin-top: -144px!important;}
+#divSubCategory .leftmenu .menu .isitma-sogutma .sub-container {margin-top: -167px!important;}
+#divSubCategory .leftmenu .menu .spor-outdoor .sub-container {margin-top: -192px!important;}
+#divSubCategory .leftmenu .menu .anne-bebek-oyuncak .sub-container {margin-top: -242px!important;}
+#divSubCategory .leftmenu .menu .saat-gozluk-aksesuar .sub-container {margin-top: -240px!important;}
+#divSubCategory .leftmenu .menu .kozmetik-kisisel-bakim .sub-container {margin-top: -295px!important;}
+#divSubCategory .leftmenu .menu .taki-mucevher-altin .sub-container {margin-top: -288px!important;}
+#divSubCategory .leftmenu .menu .giyim-ayakkabi-canta .sub-container {margin-top: -312px!important;}
+#divSubCategory .leftmenu .menu .mobilya .sub-container {margin-top: -373px!important;}
+#divSubCategory .leftmenu .menu .ev-tekstili-dekorasyon .sub-container {margin-top: -399px!important;}
+#divSubCategory .leftmenu .menu .yapi-market-hirdavat .sub-container {margin-top: -424px!important;}
+#divSubCategory .leftmenu .menu .oto-aks-navigasyon .sub-container {margin-top: -277px!important;}
+#divSubCategory .leftmenu .menu .hobi-oyun .sub-container {margin-top: -395px!important;}
+#divSubCategory .leftmenu .menu .kitap-muzik .sub-container {margin-top: -490px!important;}
+#divSubCategory .leftmenu .menu .ofis-kirtasiye .sub-container {margin-top: -495px!important;}
+#divSubCategory .leftmenu .menu .pet-shop .sub-container {margin-top: -521px!important;}
+#divSubCategory .leftmenu .menu .supermarket .sub-container {margin-top: -454px!important;}
+
+.beyaz-esya-elektrikli-ev-aletleri a.dc-mega {letter-spacing:-0.15px}

@@ -1,0 +1,254 @@
+@charset "utf-8";
+.anasayfa_urunler { width: auto; margin: 30px 0 5px 0; float: left; }
+.compare { /*background-color: #dcebfe;*/ }
+.urunler_baslik { height: 17px; margin: 10px 0 0 4px; text-shadow: 0 0 0; text-align: left; padding-top: 8px; font-size: 13px; border-bottom: 1px solid #EFEFEF; font-weight: bold; /* width: 98.5%; */ }
+.anasayfa_urunler_baslik {border-top: 1px solid #ddd;}
+.anasayfa_urunler_baslik span {padding: 0 25px 0 15px;background-color: #fff;margin-top: -19px;position: absolute; font-weight:bold;font-size: 30px;}
+.urunler_alan_anasayfa { width: 810px; height: auto; padding-bottom:15px }
+.urunler_alan_vitrin { width: 800px; margin: 0px 0 15px -5px; }
+.urunler_alan_listeleme { width: 800px; }
+.urunler_alan_listeleme_uclu { width: 800px; }
+.urunler_alan_listeleme_yatay { width: 820px; margin: 15px 0 15px -10px; }
+.urunleri_karsilastir { font-family: 'Source Sans Pro', sans-serif; text-align: right; font-weight: bold; font-size: 12px; margin: 3px 12px 0 0; float: right; background-image: url(/images/anasayfa_sprite.png?v=12); background-repeat: no-repeat; background-position: -72px -108px; width: 146px; }
+.urunleri_karsilastir a { color: #525355; }
+.site_urunler { list-style: none; padding: 0; margin: 0; /*float:left*/ }
+.site_urunler > li { width: 25%; height: auto; text-align: center; line-height: 16px; float: left; padding: 3px 0;}
+/*.site_urunler > li {border-right:1px solid #efefef;}
+.site_urunler > li:last-child {border:0px}*/
+
+.site_urunler .karsilastirma { position: absolute; margin: -8px 0 0 170px; display: none; }
+.site_urunler .imaj { margin-top: 2px; }
+.site_urunler .urun_adi { padding: 2px 8px 0 8px; color: #625548; max-height: 47px; overflow: hidden; text-align: center; }
+.site_urunler .urun_adi a:hover { color: #424245; }
+.site_urunler .urun_adi_stok { color: #9f9f9f!important; font-size: 11px; width: 100%; margin: 0px auto; padding-bottom: 3px; max-height: 30px; overflow: hidden; text-align: center; }
+.site_urunler .urun_adi_stok font {color:#9f9f9f!important}
+.site_urunler .urun_adi_stok font b {font-weight:normal}
+.site_urunler .urun_adi_stok b {font-weight:normal}
+.site_urunler .fiyat_alan { height: auto; }
+.site_urunler .fiyat_alan ul { display: table; text-align: center; margin: 7px auto 1px auto; }
+.site_urunler .fiyat_alan ul li { float: left; }
+.site_urunler .fiyat_alan ul .fiyat_box { width: auto; }
+.site_urunler .fiyat_alan ul .fiyat_box .fiyat { color: #4a4a4a; font-size: 18px; margin: 2px 0 8px 0; font-weight: bold; }
+.site_urunler .fiyat_alan ul .fiyat_box .eski_fiyat { text-decoration: line-through; font-size: 12px; height: 18px; color: #9f9f9f; }
+.site_urunler .fiyat_alan ul .indirim_alan { width: 60px; height: 52px; background-image: url(/images/anasayfa_sprite.png?v=12); background-repeat: no-repeat; background-position: -260px -71px; margin: -4px -25px 0 0; }
+.site_urunler .fiyat_alan ul .indirim_alan .indirim_oran { font-family: Arial; color: #525355; text-shadow: none; font-size: 23px; margin: 12px 0 0 27px; font-weight: bold; position: absolute; width: 26px; }
+.site_urunler .yildiz { height: 15px; margin: 5px 0;}
+.site_urunler .yildiz .yorum_sayisi { margin: 0 -19px 0 5px; float: left; color: #B9B9B9; }
+.site_urunler .yildiz .yildizS { float: left; margin-left: 22px; }
+.site_urunler .yildiz .yildizS img { margin-right: 1px; }
+.site_urunler .temin_durumu { color: #939393; padding: 10px 5px; width: 100%!important; }
+.site_urunler .icon_alan { height: 35px; margin: 8px auto; margin-left: auto; margin-right: auto; display: table; text-align: center; }
+.site_urunler .icon_alan ul { list-style: none; padding: 0; margin: 0; float: left; }
+.site_urunler .icon_alan ul li { margin: 10px 0 0 0; border-left: 1px solid #EFEFEF; min-width: 0px; float:left }
+.site_urunler .icon_alan ul li:first-child { border-left: 0px; }
+.site_urunler .icon_alan .hizligonderi { background-image: url(/images/anasayfa_sprite.png?v=12); background-repeat: no-repeat; background-position: -396px -145px; width: 65px !important; height: 26px; }
+.site_urunler .icon_alan .kargobedava { background-image: url(/images/anasayfa_sprite.png?v=12); background-repeat: no-repeat; background-position: -468px -145px; width: 80px !important; height: 26px; }
+.site_urunler .icon_alan .yeniurun { background-image: url(/images/anasayfa_sprite.png?v=12); background-repeat: no-repeat; background-position: -559px -146px; width: 52px !important; height: 26px; }
+.urunler_ayrac { border-bottom: 1px solid #EFEFEF; clear: both; margin: 0 1px; }
+.urunler_ayrac:last-child { display: none; }
+
+.site_urunler .urunler_siralama { width: 198px !important; }
+
+.urunler_alan_listeleme_uclu .site_urunler .karsilastirma { margin-left: 240px; }
+.urunler_alan_listeleme_uclu .site_urunler li { width:33%; height: auto; background-position: -314px 25px; }
+.urunler_alan_listeleme_uclu .site_urunler .yildiz .yildizS { margin: 0 0px 0 60px; }
+.urunler_alan_listeleme_uclu .site_urunler .icon_alan .hizligonderi { width: 75px !important; background-position: -388px -145px; }
+.urunler_alan_listeleme_uclu .site_urunler .icon_alan .kargobedava { width: 90px !important; background-position: -468px -145px; }
+
+
+.root_list { max-height: 39px; text-align: left; border-bottom: 1px solid #efefef; margin: 8px 1px; overflow: hidden; padding: 3px; }
+.root_list a { color: #676666; text-decoration: none; }
+.root_list a:hover { color: #036; text-decoration: underline; }
+.root_list .root_line { padding: 1px 0px; float: left; }
+.root_list .root_line .son { border: none; background: none; }
+.root_list .root_line i { font-size: 10px; margin: 0 7px 0 3px; color: #b1b1b1; }
+.root_list .root_line:last-child { font-weight: bold; }
+
+.siralama_alan { width: auto; height: 27px; padding: 15px 0 0 12px; border-bottom: 1px solid #EFEFEF; }
+.siralama_alan .urun_sayi { color: #a1a1a1; font-size: 11px; float: left; margin-top: 8px; }
+.siralama_alan .urun_gosterim { float: right; /* margin: 4px 4px; */ width: 340px; height: 18px; }
+.siralama_alan .urun_gosterim div { float: left; }
+.siralama_alan .urun_gosterim .dortlu { background-image: url(/images/anasayfa_sprite.png?v=12); background-repeat: no-repeat; background-position: -760px -97px; height: 19px; width: 32px; margin: 0 73px 0 20px; }
+.siralama_alan .urun_gosterim .uclu { background-image: url(/images/anasayfa_sprite.png?v=12); background-repeat: no-repeat; background-position: -659px -97px; height: 19px; width: 32px; margin: 0 75px 0 20px; }
+.listeleme_h1 { width: 790px; height: 25px; margin: 10px 0 -22px 12px; }
+.listeleme_h1 h1 { color: #A1A1A1; font-size: 18px; }
+.siralama_alan .urun_gosterim .gorunumcesit { font-size: 11px; margin: 4px -45px; font-weight: bold; color: #A1A1A1; }
+.vitrin_main .listeleme_h1 { margin: 10px 0 0px 3px; }
+.vitrin_main_full .listeleme_h1 {  margin: 10px 0 0px 3px; }
+.siralama_alan .urun_gosterim .div1 { width: 197px; height: 14px; cursor: pointer; margin: -6px 0px; padding: 7px; font-size: 13px; color: #9e9e9e; background-image: url(/images/anasayfa_sprite.png?v=12); background-repeat: no-repeat; background-position: -702px -232px; line-height: 16px; border: 1px solid #efefef;}
+.siralama_alan .urun_gosterim .div2 { display: none; width: 200px; border: 1px solid #E6E6E6; position: absolute; background: #FFF; height: 140px; margin: 5px -8px; padding: 5px; z-index: 99; }
+.siralama_alan .urun_gosterim .div1:hover .div2 { display: block; }
+.siralama_alan .urun_gosterim .div2 ul { list-style: none; padding: 0; margin: 0; }
+.siralama_alan .urun_gosterim .div2 li { height: 19px; border-bottom: 1px dotted #e6e6e6; padding: 6px 0 0 0; font-size: 13px; }
+.siralama_alan .urun_gosterim .div2 li a { color: #9e9e9e; }
+.siralama_alan .urun_gosterim .div2 li a:hover { color: #676666; }
+
+.listeleme_orta_alan .paginationn { width: auto; height: 20px; border-bottom: 1px solid #efefef; border-top: 1px solid #efefef; margin: 10px 0 25px 0px; text-shadow: none; line-height: 19px; }
+.listeleme_orta_alan .paginationn .prev { width: 65px; height: 20px; background-color: #525355; color: #fff; text-align: center; float: left; }
+.listeleme_orta_alan .paginationn .next { width: 65px; height: 20px; background-color: #525355; color: #fff; text-align: center; float: right; margin-top: -23px; margin-right: 28px; }
+.listeleme_orta_alan .paginationn .prev a, .next a { color: #fff; }
+.listeleme_orta_alan .paginationn .page { margin-left: auto; margin-right: auto; display: table; }
+.listeleme_orta_alan .paginationn .page ul { list-style: none; padding: 0; margin: 0; }
+.listeleme_orta_alan .paginationn .page ul li { float: left; padding-bottom: 2px; }
+.listeleme_orta_alan .paginationn .page .selected { background-color: #525355; color: #fff; border-bottom: 2px solid #ffd200; }
+.listeleme_orta_alan .paginationn .page .selected a { color: #fff; }
+.listeleme_orta_alan .paginationn .page li a { padding: 0 10px; }
+.listeleme_orta_alan .paginationn .page li:hover { background-color: #86878a; }
+.listeleme_orta_alan .paginationn .page li a:hover { color: #fff; }
+.listeleme_orta_alan .paginationn .fa-angle-double-left { background-color: #525355; color: #fff; text-align: center; float: left; font-size: 16px; padding: 2px 8px; border-right: 2px solid #fff; }
+.listeleme_orta_alan .paginationn .fa-angle-double-right { background-color: #525355; color: #fff; text-align: center; float: right; font-size: 16px; padding: 2px 8px; margin-top: -23px; }
+
+
+/*son gezdiklerim*/
+.songezilenler_alan { width: 980px; height: auto; border-top: 1px solid #efefef; margin: 30px 0; }
+.songezilenler_alan .baslik { padding: 0px 10px; background-color: #fff; width: 210px; margin: -7px 0 5px 0; }
+#songezilenler { height: 1%; overflow: hidden; margin: 8px 0 15px 7px; }
+#songezilenler .viewport { float: left; width: 100%; height: 160px; overflow: hidden; position: relative; line-height: 14px; }
+#songezilenler .buttons { background-image: url(/images/buttons.png); background-repeat: no-repeat; display: block; margin: 40px 10px 0 -27px; background-position: -7px -3px; text-indent: -999em; float: left; width: 18px; height: 52px; overflow: hidden; position: absolute; }
+#songezilenler .prev:hover { background-position: -7px -73px; }
+#songezilenler .next { background-position: -9px -143px; margin: 40px 0 0 975px; }
+#songezilenler .next:hover { background-position: -9px -216px; }
+#songezilenler .disable { visibility: hidden; }
+#songezilenler .overview { list-style: none; position: absolute; padding: 0; margin: 0; width: 240px; left: 0; top: 0; }
+#songezilenler .overview li { float: left; margin: 0 20px 0 0; height: auto; }
+#songezilenler .overview li .close { background-image: url(/images/buttons.png); background-repeat: no-repeat; width: 13px; height: 13px; cursor: pointer; position: absolute; margin: 0px 0 0 112px; }
+#songezilenler .overview li .urun_aciklama { width: 120px; text-align: center; font-size: 11px; height: 45px; overflow: hidden; }
+#songezilenler .overview li:hover > .close { background-position: -10px -282px; }
+
+
+.urundetay_main .songezilenler_alan { width: auto; height: auto; border-top: 1px solid #efefef; margin: 30px 0; }
+.urundetay_main .songezilenler_alan .baslik { padding: 0px 10px; background-color: #fff; width: 210px; margin: -7px 0 5px 0; }
+#songezilenler_urundetay { height: 1%; overflow: hidden; margin: 8px 0 15px 7px; }
+#songezilenler_urundetay .viewport { float: left; width: 100%; height: 160px; overflow: hidden; position: relative; line-height: 14px; }
+#songezilenler_urundetay .buttons { background-image: url(/images/buttons.png); background-repeat: no-repeat; display: block; margin: 40px 10px 0 -27px; background-position: -7px -3px; text-indent: -999em; float: left; width: 18px; height: 52px; overflow: hidden; position: absolute; }
+#songezilenler_urundetay .prev:hover { background-position: -7px -73px; }
+#songezilenler_urundetay .next { background-position: -9px -143px; margin: 40px 0 0 989px; }
+#songezilenler_urundetay .next:hover { background-position: -9px -216px; }
+#songezilenler_urundetay .disable { visibility: hidden; }
+#songezilenler_urundetay .overview { list-style: none; position: absolute; padding: 0; margin: 0; width: 240px; left: 0; top: 0; }
+#songezilenler_urundetay .overview li { float: left; margin: 0 23px 0 0; height: auto; }
+#songezilenler_urundetay .overview li .close { background-image: url(/images/buttons.png); background-repeat: no-repeat; width: 13px; height: 13px; cursor: pointer; position: absolute; margin: 0px 0 0 112px; }
+#songezilenler_urundetay .overview li .urun_aciklama { width: 120px; text-align: center; font-size: 11px; height: 45px; overflow: hidden; }
+#songezilenler_urundetay .overview li:hover > .close { background-position: -10px -282px; }
+
+.vitrin_main .songezilenler_alan { width: auto; height: auto; border-top: 1px solid #efefef; margin: 30px 0; }
+.vitrin_main .songezilenler_alan .baslik { padding: 0px 10px; background-color: #fff; width: 210px; margin: -7px 0 5px 0; }
+#songezilenler_vitrin { height: 1%; overflow: hidden; margin: 8px 0 15px 7px; }
+#songezilenler_vitrin .viewport { float: left; width: 100%; height: 144px; overflow: hidden; position: relative; line-height: 14px; margin-right: 10px; }
+#songezilenler_vitrin .buttons { background-image: url(/images/buttons.png); background-repeat: no-repeat; display: block; margin: 40px 10px 0 -35px; background-position: -7px -3px; text-indent: -999em; float: left; width: 29px; height: 52px; overflow: hidden; position: absolute; }
+#songezilenler_vitrin .prev:hover { background-position: -7px -73px; }
+#songezilenler_vitrin .next { background-position: 1px -143px; margin-left: 800px; }
+#songezilenler_vitrin .next:hover { background-position: 1px -216px; }
+#songezilenler_vitrin .disable { visibility: hidden; }
+#songezilenler_vitrin .overview { list-style: none; position: absolute; padding: 0; margin: 0; width: auto; left: 0; top: 0; }
+#songezilenler_vitrin .overview li { float: left; margin: 0 13px 0 0; height: auto; width: 123px; }
+#songezilenler_vitrin .overview li .close { background-image: url(/images/buttons.png); background-repeat: no-repeat; width: 13px; height: 13px; cursor: pointer; position: absolute; margin: 0px 0 0 92px; }
+#songezilenler_vitrin .overview li .urun_aciklama { width: 110px; text-align: center; font-size: 11px; height: 45px; overflow: hidden; }
+#songezilenler_vitrin .overview li img { width: 110px; height: 96px; }
+#songezilenler_vitrin .overview li:hover > .close { background-position: -10px -282px;}
+
+
+.listeleme_main .songezilenler_alan { width: auto; height: auto; border-top: 1px solid #efefef; margin: 30px 0; }
+.listeleme_main .songezilenler_alan .baslik { padding: 0px 10px; background-color: #fff; width: 210px; margin: -7px 0 5px 0; }
+#songezilenler_listeleme { height: 1%; overflow: hidden; margin: 8px 0 15px 7px; }
+#songezilenler_listeleme .viewport { float: left; width: 100%; height: 144px; overflow: hidden; position: relative; line-height: 14px; margin-right: 10px; }
+#songezilenler_listeleme .buttons { background-image: url(/images/buttons.png); background-repeat: no-repeat; display: block; margin: 40px 10px 0 -35px; background-position: -7px -3px; text-indent: -999em; float: left; width: 29px; height: 52px; overflow: hidden; position: absolute; }
+#songezilenler_listeleme .prev:hover { background-position: -7px -73px; }
+#songezilenler_listeleme .next { background-position: 1px -143px; margin-left: 800px; }
+#songezilenler_listeleme .next:hover { background-position: 1px -216px; }
+#songezilenler_listeleme .disable { visibility: hidden; }
+#songezilenler_listeleme .overview { list-style: none; position: absolute; padding: 0; margin: 0; width: auto; left: 0; top: 0; }
+#songezilenler_listeleme .overview li { float: left; margin: 0 13px 0 0; height: auto; width: 123px; }
+#songezilenler_listeleme .overview li .close { background-image: url(/images/buttons.png); background-repeat: no-repeat; width: 13px; height: 13px; cursor: pointer; position: absolute; margin: 0px 0 0 92px; }
+#songezilenler_listeleme .overview li .urun_aciklama { width: 110px; text-align: center; font-size: 11px; height: 45px; overflow: hidden; }
+#songezilenler_listeleme .overview li img { width: 110px; height: 96px; }
+#songezilenler_listeleme .overview li:hover > .close { background-position: -10px -282px; }
+
+
+/*özel listeleme menü*/
+#ozel_list_menu, #ozel_list_menu ul, #ozel_list_menu li { margin: 0; padding: 0; list-style: none; }
+#ozel_list_menu { /*background:url(/images/listeleme/line1.png) repeat-y;*/ }
+#ozel_list_menu li { line-height: 20px; margin-top: 3px; position: relative; width: 100%; }
+
+#ozel_list_menu li a { padding: 4px 0 0 0px; display: block; line-height: 15px; }
+#ozel_list_menu li span { float: left; position: absolute; top: 5px; left: 5px; width: 13px; height: 13px; cursor: auto; font-size: 0; }
+#ozel_list_menu li span, #ozel_list_menu li span.collapsed { /*background:url(/images/listeleme/collapsed.png?v=1) no-repeat 0 0;*/ }
+#ozel_list_menu li span.expanded { /*background:url(/images/listeleme/expanded.png?v=1) no-repeat 0 0;*/ }
+
+#ozel_list_menu li ul { /*margin-left:18px;background:url(/images/listeleme/line1.png?v=1) repeat-y;*/ font-size: 11px; }
+#ozel_list_menu li li { /*background:url(/images/listeleme/line2.png?v=1) no-repeat 0 0;*/ }
+
+#ozel_list_menu:after, #ozel_list_menu ul:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+#ozel_list_menu, #ozel_list_menu ul { display: block; min-height: 1%; margin-bottom: 10px; padding-left: 10px; font-size: 11px; }
+
+#ozel_list_menu ul { display: none; }
+
+.ozel_reklam_alan_ust { width: 790px; }
+.ozel_reklam_alan_ust img { margin-bottom: 5px; }
+
+.ozel_reklam_alan_sol { width: 170px; }
+.ozel_reklam_alan_sol img { margin-bottom: 5px; }
+
+.ozel_reklam_alan_alt { width: 790px; margin: 0 0 5px 186px; }
+.ozel_reklam_alan_alt img { margin-bottom: 5px; }
+
+/* visilabs benzer urunler */
+.benzerurunler { width: 1000px; height: auto; }
+.benzerurunler .songezilen { width: 193px; float: left; border: 1px solid #ddd; height: auto; text-align: center; line-height: 16px; margin: 8px 2px; padding-bottom: 7px; }
+.benzerurunler .songezilen .baslik { padding: 3px 0; background-color: #ededed; width: 193px; }
+.benzerurunler .onerilenler { width: 780px; float: left; border-top: 1px solid #ddd; margin: 20px 0 0 0; }
+.benzerurunler .onerilenler .baslik { padding: 0 15px 0 5px; background-color: #fff; margin-top: -6px; position: absolute; }
+.benzerurunler .onerilenler .site_urunler {width:800px}
+.urunler_alan_listeleme .site_urunler .product_logo { position: absolute; margin: 130px 0 0 0px; height: 30px; width: 190px; display: block; }
+.urunler_alan_listeleme .site_urunler .product_logo .logo { width: 35px; height: 30px; margin-right: 5px; float: right; }
+
+.urunler_alan_listeleme_uclu .site_urunler .product_logo { position: absolute; margin: 180px 0 0 65px; height: 30px; width: 190px; display: block; }
+.urunler_alan_listeleme_uclu .site_urunler .product_logo .logo { width: 35px; height: 30px; margin-right: 5px; float: right; }
+
+
+/* visilabs kategori bazli en cok satan urunler */
+.en_cok_satan_kategoriler { float: left; margin: 40px 0 0px 0; border-top: 1px solid #dddddd; width: 980px;}
+.en_cok_satan_kategoriler .baslik { width: 195px; height: 22px; background-color: #ededed; margin: -23px 0 -5px 0; text-align: center; line-height: 24px; float: left; }
+.en_cok_satan_kategoriler .kategori_baslik { float: left; margin: -24px 0 0 195px; width: 210px; height: 22px; line-height: 24px; border-bottom: 2px solid #000; font-size: 11px; text-align: center; }
+.en_cok_satan_kategoriler .site_urunler li { width: 19.4%; }
+.en_cok_satan_kategoriler ul.tabs { margin: -23px 0 5px 195px; padding: 0px; list-style: none;}
+.en_cok_satan_kategoriler ul.tabs li { background: none; color: #222; display: inline-block; cursor: pointer;margin-right: -4px; height: 20px;}
+.en_cok_satan_kategoriler ul.tabs li.current { color: #222; border-bottom: 2px solid #000;}
+.en_cok_satan_kategoriler ul.tabs li.tab-link a {  border-right: 1px solid #ddd;display: block;  font-size: 11px;  width: 210px;  text-align: center;  line-height: 22px;}
+.en_cok_satan_kategoriler .tab-content { display: none; padding: 15px; }
+.en_cok_satan_kategoriler .tab-content.current { display: inherit; }
+
+#en_cok_satan_slider > li, #en_cok_satan_slider_1 > li, #en_cok_satan_slider_2 > li, #en_cok_satan_slider_3 > li {float: left;margin: 8px 0;}
+.en_cok_satan_kategoriler .nbs-flexisel-container .fiyat_alan {margin-top: 15px;}
+.en_cok_satan_kategoriler .nbs-flexisel-container .fiyat_alan ul .indirim_alan {margin-top: -13px;}
+.en_cok_satan_kategoriler .nbs-flexisel-container .fiyat_alan ul .indirim_alan .indirim_oran {margin-top: 20px;}
+
+.nbs-flexisel-container { position: relative; max-width: 100%; }
+.nbs-flexisel-ul { position: relative; width: 9999px; margin: 0px; padding: 0px; list-style-type: none; text-align: center; }
+.nbs-flexisel-inner { overflow: hidden; float: left; width:980px; margin-top: -4px;}
+.nbs-flexisel-item { float: left; margin: 0px; padding: 0px; cursor: pointer; position: relative; line-height: 0px; }
+.nbs-flexisel-item img { cursor: pointer; position: relative;}
+.nbs-flexisel-nav-left,
+.nbs-flexisel-nav-right { width: 18px; height: 52px; position: absolute; cursor: pointer; z-index: 100; opacity: 0.5; top: 100px!important;}
+.nbs-flexisel-nav-left { left: -20px; background: url(/images/buttons.png) no-repeat; background-position: -7px -73px; }
+.nbs-flexisel-nav-right { right: -25px; background: url(/images/buttons.png) no-repeat; background-position: -9px -216px; }
+.nbs-flexisel-nav-left:hover { background-position: -7px -3px; }
+.nbs-flexisel-nav-right:hover { background-position: -9px -143px; }
+
+.tab-content .nbs-flexisel-nav-left {left:-35px}
+.tab-content .nbs-flexisel-nav-right {right:-40px}
+
+/*tinycarousel sonsuz dongu onleme*/
+.overview li.mirrored {display:none}
+
+/*Vitrin Menu Duzenleme*/
+.menu_category_back {font-size: 12px;text-decoration: none;line-height: 13px;}
+.menu_category_back a {color: #1B1B1B;padding: 4px 0 4px 0px; display:block}
+.menu_category_back a:hover {background-color: #EFEFEF;}
+.menu_category_back .fa-angle-left {margin: 0 4px 3px 0;float: left;}
+ul.vitrinmenu a {padding: 4px 0 4px 15px!important;}
+#showh1 .fa-caret-down {margin-left:-11px}
+
+.showhide.hidden {display:none}
+.listelememenu-genel .vitrinmenu {margin-top:0px}
+.listelememenu-genel .vitrinmenu .fa-plus {font-size: 9px;}

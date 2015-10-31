@@ -1,0 +1,202 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication7.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="Content\bootstrap.min.css"/>
+    <link href="Content/anasayfa.css" rel="stylesheet" />
+    <link href="Content/footer.css" rel="stylesheet" />
+    <link href="Content/benim.css" rel="stylesheet" />
+    <link href="Content/leftmenu.css" rel="stylesheet" />
+    <link href="Content/site-urunler.css" rel="stylesheet" />
+    <script src="Scripts\jquery-1.9.1.min.js"></script>
+    <script src="Scripts\bootstrap.min.js"></script>
+    <script src="Scripts\angular.min.js"></script>
+    <link rel="stylesheet" href="css\bootstrap.min.css"/>
+    <script src="js\jquery.min.js"></script>
+    <script src="js\bootstrap.min.js"></script>
+    <script src="js\angular.min.js"></script>
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+        input:focus:invalid {border-color:red;background-color:#ff5e7e}
+        input:focus:valid {border-color: green;background-color:#89ff89}
+        @keyframes vertical-slide1 {
+            from {margin-top:0px}
+            to {margin-top:600px}
+        }
+        @keyframes vertical-slide2 {
+            from {margin-top:-600px}
+            to {margin-top:0px}
+        }
+        ul#hesap-menu,ul#sepet-menu{
+            width:110px;
+            
+            background-color:#ffffff;
+            box-shadow:5px 5px 20px #e8e8e8
+        } 
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        </style>
+</head>
+<body>
+    <script>
+    var menu_opened = [false, false, false, false, false, false, false, false, ];
+    var hesap_menu_opened = false;
+    var sepet_menu_opened = false;
+    function menu_open(i) { for (var k = 0; k < 8; k++) { menu_opened[i] = false }; menu_opened[i - 1] = true; return true };
+    function display_item(x) { document.getElementById(x).style.display = "inline" };
+    function hide_item(x) { var s = x.toString(); s = s[s.length - 1]; if (menu_opened[s - 1] != true) document.getElementById(x).style.display = "none" };
+    function focus_item(x) { document.getElementById(x).focus();}
+    function defocus_item(x) { document.getElementById(x).blur(); }
+    function hesap_display_menu() { document.getElementById('hesap-menu').style.display = "block" }
+    function hesap_hide_menu() { document.getElementById('hesap-menu').style.display = "none" }
+</script>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <table class="auto-style1">
+                <tr>
+                    <td colspan="4" style="text-align:right;width:100%">
+                        <asp:Label id="lblInfo" runat="server" OnInit="lblInfo_Init"></asp:Label>
+                    </td>
+                    <td></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div>
+                            <ul style="list-style-type:none;width:100%">
+                                <li style="display:inline">7/24 Hizmet Hattı : 444 5 495</li>
+                                <li style="display:inline;float:right"><a href="#">
+                                    <img src="images\t_login.png"/></a></li>
+                                <li style="display:inline;float:right"><a href="#">
+                                    <img src="images\g_login.png"/></a>&nbsp;</li>
+                                <li style="display:inline;float:right"><a href="#">
+                                    <img src="images\f_login.png"/></a>&nbsp;</li>
+                                <li style="display:inline;float:right"><a href="\Yardim.aspx">Yardım&nbsp;</a></li>
+                                <li style="display:inline;float:right;border-left: thin ridge #808080">&nbsp;</li>
+                                <li style="display:inline;float:right">
+                                    <asp:LinkButton ID="lnkCikis" Text="Çıkış" OnClick="lnkCikis_Click" OnInit="lnkCikis_Init" Visible="false" runat="server"></asp:LinkButton>
+                                </li>
+                                <li style="display:inline;float:right">
+                                    <asp:HyperLink ID="lnkRegister" Text="Üye Ol  " NavigateUrl="\Register.aspx" runat="server" OnInit="lnkRegister_Init"></asp:HyperLink>
+                                </li>
+                                <li style="display:inline;float:right;border-left: thin ridge #808080">&nbsp;</li>
+                                <li style="display:inline;float:right">&nbsp;</li>
+                                <li style="display:inline;float:right">
+                                    <asp:HyperLink ID="lnkLogin" Text="Oturum Aç" NavigateUrl="#" onclick="display_item('login')" runat="server" OnInit="lnkLogin_Init"></asp:HyperLink>
+                                </li>
+                            </ul>
+                        </div>
+                        <asp:Panel ID="loginPanel" runat="server">
+                            <div id="login" style="width:100%; position:absolute;display:none;float:right;padding-right:8px;">
+                                <p id="login" style="float:right">
+                                    <asp:Button id="login_button" style="float:right" Text="Giriş" runat="server" OnClick="Unnamed3_Click" />
+                                </p>
+                                <p id="login" style="float:right">
+                                    Şifre:&nbsp;<asp:TextBox ID="login_password" TabIndex="2" title="Şifreniz" placeholder="5-10 arası karakter..."  pattern="([a-zA-Z0-9]{5,10})"  onkeypress="if (event.keyCode==13) Unnamed3_Click()" runat="server"></asp:TextBox>
+                                </p>
+                                <p id="login" style="float:right">
+                                    Kullanıcı Adı:&nbsp;<asp:TextBox id="login_name" tabindex="1" title="E-Mailiniz" pattern="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" placeholder="E-Mailiniz..." onkeypress="if (event.keyCode==13) document.getElementById('login_password').focus()" type="text" style="float:right;" runat="server"></asp:TextBox>
+                                </p>
+                            </div>
+                            <!--Image-->
+                        </asp:Panel>
+                        <div>
+                            <p>
+                                <a href="\default.aspx">
+                                <img src="images\images.jpg" style="width:100%" /></a></p>
+                        </div>
+    <!--Banner-->
+                        <div style="width:100%;height:80px">
+                            <img src="images\banner.jpg" width="80" height="80" style="float:left" />
+                            <div style="width:160px;height:80px;float:left"></div>
+                            <div style="height:80px;margin-top:20px; float:left;vertical-align:middle">
+                                <script type="text/javascript">
+                                    $(document).ready(function () {
+                                        $("#SearchBox").keyup(function () {
+                                            $.ajax({
+                                                type: "POST",
+                                                contentType: "application/json; charset=utf-8",
+                                                url: "default.aspx/MetinAra",
+                                                data: '{Metin:"' + $("#SearchBox")[0].value + '"}',
+                                                dataType: "json",
+                                                success: function (data) {
+                                                    alert(data.d);
+                                                },
+                                                error:function (x) {
+                                                    alert("Hata:"+x.d);
+                                                }
+                                            })
+                                        })
+                                    })
+                                </script>
+                                <input type="text" id="SearchBox" title="Arama" style="display:inline;height:36px;width:400px;border:1px solid #808080;background-clip:padding-box;background-color:#e8e8e8" value="Aradığını Hızlıca Bul..." onfocus="if(this.beenchanged!=true){ this.value = ''}" onblur="if(this.beenchanged!=true) { this.value='Aradığını Hızlıca Bul...' }" onchange="this.beenchanged = true;" />
+                                <input type="button" id="SearchButton" style="display:inline; width:48px; height:36px;background-color:#ff8d00;background-image: -webkit-linear-gradient(top,#ff8d00,#854a00); border:1px solid #854a00;text-align:center" value="Ara" />
+                            </div>
+                            <div id="hesap" style="position: relative; height: 36px; width: 201px; margin-left: 20px; margin-top: 20px; padding-top: 7px; padding-left: 10px;border-right: solid thin #e8e8e8;box-shadow:5px 5px 20px #e8e8e8; float: left; vertical-align: middle; " onmouseover="hesap_display_menu()" onmouseout="if (hesap_menu_opened==false) hesap_hide_menu()">
+                                <asp:Menu ID="Menu2" runat="server" DynamicMenuItemStyle-CssClass="hesabim" StaticMenuItemStyle-CssClass="hesabim">
+                                    <StaticItemTemplate>
+                                        <%# Eval("Text") %>
+                                    </StaticItemTemplate>
+                                    <DynamicItemTemplate>
+                                        <%# Eval("Text") %>
+                                    </DynamicItemTemplate>
+                                </asp:Menu>
+                            </div>
+                            <div id="sepet" style="position: relative; height: 36px; width: 121px; margin-right: 10px; margin-top: 20px; padding-top: 10px; padding-left: 30px; border-left: solid thin #e8e8e8; box-shadow: 5px 5px 20px #e8e8e8; float: left; vertical-align: middle; " onmouseover="sepet_display_menu()" onmouseout="if (sepet_menu_opened==false) sepet_hide_menu()">
+                                <asp:HyperLink ID="SepetimLabel" runat="server" NavigateUrl="/Sepetim.aspx" Text="Sepetim"></asp:HyperLink>
+                            </div>
+                        </div>
+                        <article style="width:400px;height:auto;position:absolute; left:240px; display:block;">
+                            <asp:ListBox ID="listboxSearch" CausesValidation="false" Width="400" runat="server" OnInit="listboxSearch_Init">
+                            </asp:ListBox>
+                        </article>
+                        <div class="band">
+                        </div>
+                        <hr /></td>
+                </tr>
+            </table>
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            <p>qweqweqweqw qweqweqweqqwe qweqweqweqweq</p>
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="Footer" runat="server">
+
+            <div style="position:absolute;float:left">
+                <p>
+                    &nbsp;</p>
+            </div>
+            <div id="footer1" class="divider" style="border:1px solid #e0e0e0">
+                <asp:DataList ID="DataList1" runat="server" HorizontalAlign="Center" RepeatColumns="4" RepeatDirection="Horizontal" Width="924px">
+                    <HeaderTemplate>
+                        <div class="band">
+                        </div>
+                    </HeaderTemplate>
+                    <ItemTemplate>
+                        <a href="MainPage.aspx?ID=<%# Eval("AnaKategoriID") %>"><%#Eval("Adi")%></a>
+                    </ItemTemplate>
+                    <FooterTemplate>
+                    </FooterTemplate>
+                </asp:DataList>
+            </div>
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+   
+</body>
+</html>

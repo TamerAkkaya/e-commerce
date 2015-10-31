@@ -1,0 +1,41 @@
+﻿@keyframes leftmenuforward{
+    0%{background-color:white;color:black; font-size:14px;height:34px;width:235px;font-weight:normal}
+    50%{background-color:#808080;color:#ff8d00; font-size:15px;height:34px;width:235px;font-weight:bold}
+    100%{background-color:white;color:black;font-size:14px;height:34px;width:235px;font-weight:normal}
+}
+@keyframes band {
+    0% {margin-left:-30%}
+    50% {margin-left:30%}
+    100% {margin-left:-30%}
+}
+        .leftAna{
+            height:34px;
+            width:235px;
+            margin:2px;
+            padding:4px;
+            color:black;
+            font-size:14px;
+        }
+        .leftAna:hover{
+            animation-name:leftmenuforward;
+            animation-duration:0.3s;
+        }
+        .band{
+            margin-left:-30%;
+            height:20px;
+            width:60%;
+            position:relative;
+            display:block;
+            background:linear-gradient(to right,white,gray,white);
+            animation-name:band;
+            animation-duration:8s;
+            animation-iteration-count:infinite;
+            z-index:-1;
+        }
+        .hesabim{
+            margin-left:-50px;
+            margin:1px;
+            padding:2px;
+            background-color:rgba(255,255,255,0.7);
+            
+        }

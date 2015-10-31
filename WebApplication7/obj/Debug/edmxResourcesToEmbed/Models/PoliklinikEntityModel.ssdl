@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PoliklinikModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="il-ilce">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="plaka" Type="tinyint" Nullable="false" />
+    <Property Name="bolge" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="il" Type="varchar" MaxLength="64" Nullable="false" />
+    <Property Name="ilce" Type="varchar" MaxLength="64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Kullanicilar">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adi" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Soyadi" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="KullaniciAdi" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Sifre" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="GüncellemeZamani" Type="datetime" />
+    <Property Name="Telefon" Type="nvarchar" MaxLength="10" />
+    <Property Name="DogumTarihi" Type="date" />
+    <Property Name="Ulke" Type="nvarchar" MaxLength="50" />
+    <Property Name="Il" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ilce" Type="nvarchar" MaxLength="50" />
+    <Property Name="Cinsiyet" Type="bit" />
+    <Property Name="TelefonListesinde" Type="bit" />
+    <Property Name="EmailListesinde" Type="bit" />
+  </EntityType>
+  <EntityType Name="Sepet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KullaniciAdi" Type="nvarchar" MaxLength="50" />
+    <Property Name="SessionID" Type="nvarchar" MaxLength="50" />
+    <Property Name="UrunID" Type="uniqueidentifier" />
+    <Property Name="UrunAdi" Type="nvarchar" MaxLength="500" />
+    <Property Name="UrunSiparisAdet" Type="int" />
+    <Property Name="UrunFiyat" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="ToplamFiyat" Type="decimal" Precision="16" Scale="2" StoreGeneratedPattern="Computed" />
+    <Property Name="UrunResmi" Type="varchar" MaxLength="250" />
+    <Property Name="GuncellemeTarihi" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Siparisler">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SiparisNo" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SiparisTarihi" Type="datetime" Nullable="false" />
+    <Property Name="KullaniciAdi" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UrunID1" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UrunID2" Type="uniqueidentifier" />
+    <Property Name="UrunID3" Type="uniqueidentifier" />
+    <Property Name="UrunID4" Type="uniqueidentifier" />
+    <Property Name="UrunID5" Type="uniqueidentifier" />
+    <Property Name="UrunID6" Type="uniqueidentifier" />
+    <Property Name="UrunID7" Type="uniqueidentifier" />
+    <Property Name="UrunID8" Type="uniqueidentifier" />
+    <Property Name="UrunID9" Type="uniqueidentifier" />
+    <Property Name="UrunID10" Type="uniqueidentifier" />
+    <Property Name="UrunID1_Adi" Type="nvarchar" MaxLength="50" />
+    <Property Name="UrunID2_Adi" Type="nvarchar" MaxLength="50" />
+    <Property Name="UrunID3_Adi" Type="nvarchar" MaxLength="50" />
+    <Property Name="UrunID4_Adi" Type="nvarchar" MaxLength="50" />
+    <Property Name="UrunID5_Adi" Type="nvarchar" MaxLength="50" />
+    <Property Name="UrunID6_Adi" Type="nvarchar" MaxLength="50" />
+    <Property Name="UrunID7_Adi" Type="nvarchar" MaxLength="50" />
+    <Property Name="UrunID8_Adi" Type="nvarchar" MaxLength="50" />
+    <Property Name="UrunID9_Adi" Type="nvarchar" MaxLength="50" />
+    <Property Name="UrunID10_Adi" Type="nvarchar" MaxLength="50" />
+    <Property Name="UrunID1_Adet" Type="tinyint" />
+    <Property Name="UrunID2_Adet" Type="tinyint" />
+    <Property Name="UrunID3_Adet" Type="tinyint" />
+    <Property Name="UrunID4_Adet" Type="tinyint" />
+    <Property Name="UrunID5_Adet" Type="tinyint" />
+    <Property Name="UrunID6_Adet" Type="tinyint" />
+    <Property Name="UrunID7_Adet" Type="tinyint" />
+    <Property Name="UrunID8_Adet" Type="tinyint" />
+    <Property Name="UrunID9_Adet" Type="tinyint" />
+    <Property Name="UrunID10_Adet" Type="tinyint" />
+    <Property Name="UrunID1_Fiyat" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="UrunID2_Fiyat" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="UrunID3_Fiyat" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="UrunID4_Fiyat" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="UrunID5_Fiyat" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="UrunID6_Fiyat" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="UrunID7_Fiyat" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="UrunID8_Fiyat" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="UrunID9_Fiyat" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="UrunID10_Fiyat" Type="decimal" Precision="16" Scale="2" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="UrunAltAltAltKategori">
+    <Key>
+      <PropertyRef Name="AltAltAltKategoriID" />
+    </Key>
+    <Property Name="AltAltAltKategoriID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AltAltKategori" Type="bigint" Nullable="false" />
+    <Property Name="Adi" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RowGuid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="GuncellemeTarihi" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UrunAltAltKategori">
+    <Key>
+      <PropertyRef Name="AltAltKategoriID" />
+    </Key>
+    <Property Name="AltAltKategoriID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AltKategori" Type="bigint" Nullable="false" />
+    <Property Name="Adi" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RowGuid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="GuncellemeTarihi" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UrunAltKategori">
+    <Key>
+      <PropertyRef Name="AltKategoriID" />
+    </Key>
+    <Property Name="AltKategoriID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AnaKategori" Type="bigint" Nullable="false" />
+    <Property Name="Adi" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RowGuid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="GuncellemeTarihi" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UrunDetayOzellikleri">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UrunID" Type="uniqueidentifier" />
+    <Property Name="OzellikID" Type="bigint" Nullable="false" />
+    <Property Name="Ozellik" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Açiklama" Type="nvarchar(max)" />
+    <Property Name="RowGuid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="GuncellemeTarihi" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UrunKategori">
+    <Key>
+      <PropertyRef Name="AnaKategoriID" />
+    </Key>
+    <Property Name="AnaKategoriID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adi" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RowGuid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="GuncellemeTarihi" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Urunler">
+    <Key>
+      <PropertyRef Name="UrunID" />
+    </Key>
+    <Property Name="UrunID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UrunAdi" Type="nvarchar" MaxLength="1000" />
+    <Property Name="AltKategori" Type="bigint" />
+    <Property Name="Adet" Type="int" />
+    <Property Name="Fiyat" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="IndirimliFiyat" Type="decimal" Precision="16" Scale="2" StoreGeneratedPattern="Computed" />
+    <Property Name="IskontoOrani" Type="tinyint" />
+    <Property Name="Resim1" Type="varchar" MaxLength="250" />
+    <Property Name="Resim2" Type="varchar" MaxLength="250" />
+    <Property Name="Resim3" Type="varchar" MaxLength="250" />
+    <Property Name="Resim4" Type="varchar" MaxLength="250" />
+    <Property Name="GüncellemeTarihi" Type="datetime" />
+  </EntityType>
+  <EntityType Name="UrunOzellikleri">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OzellikID" Type="bigint" Nullable="false" />
+    <Property Name="Ozellik" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Açiklama" Type="nvarchar(max)" />
+    <Property Name="RowGuid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="GuncellemeTarihi" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_UrunAltAltAltKategori_UrunAltAltKategori">
+    <End Role="UrunAltAltKategori" Type="Self.UrunAltAltKategori" Multiplicity="1" />
+    <End Role="UrunAltAltAltKategori" Type="Self.UrunAltAltAltKategori" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UrunAltAltKategori">
+        <PropertyRef Name="AltAltKategoriID" />
+      </Principal>
+      <Dependent Role="UrunAltAltAltKategori">
+        <PropertyRef Name="AltAltKategori" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UrunAltAltKategori1_UrunAltKategori">
+    <End Role="UrunAltKategori" Type="Self.UrunAltKategori" Multiplicity="1" />
+    <End Role="UrunAltAltKategori" Type="Self.UrunAltAltKategori" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UrunAltKategori">
+        <PropertyRef Name="AltKategoriID" />
+      </Principal>
+      <Dependent Role="UrunAltAltKategori">
+        <PropertyRef Name="AltKategori" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UrunAltKategori_UrunKategori">
+    <End Role="UrunKategori" Type="Self.UrunKategori" Multiplicity="1" />
+    <End Role="UrunAltKategori" Type="Self.UrunAltKategori" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UrunKategori">
+        <PropertyRef Name="AnaKategoriID" />
+      </Principal>
+      <Dependent Role="UrunAltKategori">
+        <PropertyRef Name="AnaKategori" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Urunler_UrunAltKategori">
+    <End Role="UrunAltKategori" Type="Self.UrunAltKategori" Multiplicity="0..1" />
+    <End Role="Urunler" Type="Self.Urunler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UrunAltKategori">
+        <PropertyRef Name="AltKategoriID" />
+      </Principal>
+      <Dependent Role="Urunler">
+        <PropertyRef Name="AltKategori" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UrunOzellikleri_UrunAltKategori">
+    <End Role="UrunAltKategori" Type="Self.UrunAltKategori" Multiplicity="1" />
+    <End Role="UrunOzellikleri" Type="Self.UrunOzellikleri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UrunAltKategori">
+        <PropertyRef Name="AltKategoriID" />
+      </Principal>
+      <Dependent Role="UrunOzellikleri">
+        <PropertyRef Name="OzellikID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="PrimaryKeyReset" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TableName" Type="nvarchar" Mode="In" />
+    <Parameter Name="StartIndex" Type="bigint" Mode="In" />
+  </Function>
+  <EntityContainer Name="PoliklinikModelStoreContainer">
+    <EntitySet Name="il-ilce" EntityType="Self.il-ilce" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kullanicilar" EntityType="Self.Kullanicilar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sepet" EntityType="Self.Sepet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Siparisler" EntityType="Self.Siparisler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UrunAltAltAltKategori" EntityType="Self.UrunAltAltAltKategori" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UrunAltAltKategori" EntityType="Self.UrunAltAltKategori" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UrunAltKategori" EntityType="Self.UrunAltKategori" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UrunDetayOzellikleri" EntityType="Self.UrunDetayOzellikleri" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UrunKategori" EntityType="Self.UrunKategori" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Urunler" EntityType="Self.Urunler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UrunOzellikleri" EntityType="Self.UrunOzellikleri" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_UrunAltAltAltKategori_UrunAltAltKategori" Association="Self.FK_UrunAltAltAltKategori_UrunAltAltKategori">
+      <End Role="UrunAltAltKategori" EntitySet="UrunAltAltKategori" />
+      <End Role="UrunAltAltAltKategori" EntitySet="UrunAltAltAltKategori" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UrunAltAltKategori1_UrunAltKategori" Association="Self.FK_UrunAltAltKategori1_UrunAltKategori">
+      <End Role="UrunAltKategori" EntitySet="UrunAltKategori" />
+      <End Role="UrunAltAltKategori" EntitySet="UrunAltAltKategori" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UrunAltKategori_UrunKategori" Association="Self.FK_UrunAltKategori_UrunKategori">
+      <End Role="UrunKategori" EntitySet="UrunKategori" />
+      <End Role="UrunAltKategori" EntitySet="UrunAltKategori" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Urunler_UrunAltKategori" Association="Self.FK_Urunler_UrunAltKategori">
+      <End Role="UrunAltKategori" EntitySet="UrunAltKategori" />
+      <End Role="Urunler" EntitySet="Urunler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UrunOzellikleri_UrunAltKategori" Association="Self.FK_UrunOzellikleri_UrunAltKategori">
+      <End Role="UrunAltKategori" EntitySet="UrunAltKategori" />
+      <End Role="UrunOzellikleri" EntitySet="UrunOzellikleri" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
